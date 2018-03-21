@@ -22,6 +22,21 @@ app.get('/cats_and_dogs', function(req, res){
 })
 
 
+
+
+app.get('/hello/:name/:born', function(req, res){
+    var name = req.params.name || 'world';
+    var yearborn = req.params.born || 2018;
+    var d = new Date();
+    var n = d.getFullYear();
+    var age = (n - yearborn);
+    console.log(age);
+    res.send('Hello ' + name + "! You were born in" + age);
+
+});
+
+
+
 app.listen(3000, function(){
     console.log('Example app listening on port 3000!');
 });
