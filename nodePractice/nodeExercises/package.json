@@ -1,0 +1,15 @@
+{
+  "name": "The Digital Craft App",
+  "version": "1.0.0",
+  "description": "",
+  "main": "expressExercises.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemod /moreExpressEx.js"
+  },
+  "author": "Nathan",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.7"
+  }
+}
